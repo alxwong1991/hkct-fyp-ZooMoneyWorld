@@ -1,0 +1,63 @@
+<ion-content>
+  <div class="tally">
+  <ion-button fill="clear">
+  <ion-label>賬本</ion-label>
+  <ion-icon name="journal"></ion-icon>
+  </ion-button>
+  </div>
+
+
+  <div class="tab">
+    <div class="mainbtn">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4"></ion-col>
+          <ion-col size="4">
+            <ion-button (click)="onClick()" expand="block" fill="clear">
+              支出
+            </ion-button>
+          </ion-col>
+          <ion-col size="4">
+            <ion-button (click)="onClick()" expand="block" fill="clear">
+              收入
+            </ion-button>
+          </ion-col>
+          <ion-col size="4"></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="btntype">
+    <ion-slides mode="ios" pager="ios" scrollbar="ios">
+      <ion-slide>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="3">
+            <ion-tab-button (click)="onClick()" fill="outline">
+              <ion-icon name="fast-food-outline"></ion-icon>
+              <ion-label>餐飲</ion-label>
+            </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()" fill="outline">
+                <ion-icon name="shirt-outline"></ion-icon>
+                <ion-label>購物</ion-label>
+              </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()" fill="outline">
+                日用
+              </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()"  fill="outline">
+                交通
+              </ion-tab-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-slide>
+    </ion-slides>
+    </div>
+  </div>
+</ion-content>
