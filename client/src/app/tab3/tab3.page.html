@@ -1,13 +1,13 @@
 <ion-content>
-  <div class="tally">
-  <ion-button fill="clear">
-  <ion-label>賬本</ion-label>
-  <ion-icon name="journal"></ion-icon>
-  </ion-button>
-  </div>
-
-
+ 
   <div class="tab">
+    <div class="tally">
+    <ion-button fill="clear">
+    <ion-label>賬本</ion-label>
+    <ion-icon name="journal"></ion-icon>
+    </ion-button>
+    </div>
+    <br>
     <div class="mainbtn">
       <ion-grid>
         <ion-row>
@@ -26,7 +26,7 @@
         </ion-row>
       </ion-grid>
     </div>
-
+ 
     <div class="btntype">
     <ion-slides mode="ios" pager="ios" scrollbar="ios">
       <ion-slide>
@@ -55,9 +55,94 @@
               </ion-tab-button>
             </ion-col>
           </ion-row>
+          <br>
+          <ion-row>
+            <ion-col size="3">
+            <ion-tab-button (click)="onClick()" fill="outline">
+              <ion-icon name="fast-food-outline"></ion-icon>
+              <ion-label>餐飲</ion-label>
+            </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()" fill="outline">
+                <ion-icon name="shirt-outline"></ion-icon>
+                <ion-label>購物</ion-label>
+              </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()" fill="outline">
+                日用
+              </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()"  fill="outline">
+                交通
+              </ion-tab-button>
+            </ion-col>
+          </ion-row>
+          <br>
+          <ion-row>
+            <ion-col size="3">
+            <ion-tab-button (click)="onClick()" fill="outline">
+              <ion-icon name="fast-food-outline"></ion-icon>
+              <ion-label>餐飲</ion-label>
+            </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()" fill="outline">
+                <ion-icon name="shirt-outline"></ion-icon>
+                <ion-label>購物</ion-label>
+              </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()" fill="outline">
+                日用
+              </ion-tab-button>
+            </ion-col>
+            <ion-col size="3">
+              <ion-tab-button (click)="onClick()"  fill="outline">
+                交通
+              </ion-tab-button>
+            </ion-col>
+          </ion-row>
+          <br><br>
         </ion-grid>
       </ion-slide>
     </ion-slides>
     </div>
-  </div>
+   
+    
+    <div class="calc">
+      <ion-input [(ngModel)]="cost" type="text"></ion-input>
+      <div class="num-btn">
+        <ion-button (click)="calClick('7')">7</ion-button>
+        <ion-button (click)="calClick('8')">8</ion-button>
+        <ion-button (click)="calClick('9')">9</ion-button>
+        <ion-button (click)="onClick()" fill="outline">
+          <ion-icon name="calendar-clear-outline"></ion-icon>
+        </ion-button>
+        <ion-button (click)="calClick('4')">4</ion-button>
+        <ion-button (click)="calClick('5')">5</ion-button>
+        <ion-button (click)="calClick('6')">6</ion-button>
+        <ion-button (click)="calClick('+')" fill="outline">
+          <ion-icon name="add-outline"></ion-icon>
+        </ion-button>
+        <ion-button (click)="calClick('1')">1</ion-button>
+        <ion-button (click)="calClick('2')">2</ion-button>
+        <ion-button (click)="calClick('3')">3</ion-button>
+        <ion-button (click)="calClick('-')" fill="outline">
+          <ion-icon name="remove-outline"></ion-icon>
+        </ion-button>
+        <ion-button (click)="calClick('.')"style="font-size: 22px;">.</ion-button>
+        <ion-button (click)="calClick('0')">0</ion-button>
+        <ion-button (click)="delClick()" style="font-size: 15px;">
+          <ion-icon name="backspace-outline" ></ion-icon>
+        </ion-button>
+        <ion-button  style="font-size: 18px; --background:#f7b75d;">完成</ion-button>
+      </div>
+      </div>
+    </div>
+    
 </ion-content>
+ 
+
