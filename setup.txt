@@ -6,3 +6,5 @@ i am ng ka ho
 hkct hihihi
 
 hkct
+
+Amy: simple tally page completed(just ui) but still have bug
