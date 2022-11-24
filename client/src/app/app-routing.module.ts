@@ -33,7 +33,11 @@ const routes: Routes = [
   {
     path: 'forgetpassword',
     loadChildren: () => import('./forgetpassword/forgetpassword.module').then( m => m.ForgetpasswordPageModule)
+  },  {
+    path: 'ledger',
+    loadChildren: () => import('./ledger/ledger.module').then( m => m.LedgerPageModule)
   }
+
 ];
 @NgModule({
   imports: [
