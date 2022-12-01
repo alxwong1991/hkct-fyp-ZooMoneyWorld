@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'forgetpassword',
     loadChildren: () => import('./forgetpassword/forgetpassword.module').then( m => m.ForgetpasswordPageModule)
+  },
+  {
+    path: 'tally',
+    loadChildren: () => import('./tally/tally.module').then( m => m.TallyPageModule)
   }
 ];
 @NgModule({
