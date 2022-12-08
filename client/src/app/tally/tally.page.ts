@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tally',
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TallyPage implements OnInit {
 
-  constructor() { }
+  constructor(private alertController: AlertController) { }
 
   ngOnInit() {
+  }
+
+  async create() {
+    const alert = await this.alertController.create({
+      header: '我的賬本',
+      buttons: ['OK'],
+      inputs: [
+        {
+          placeholder: 'Name',
+        },
+        
+        {
+          type: 'date',
+          placeholder: 'StartDate',
+        },
+        
+      ],
+    });
+
+    await alert.present();
   }
 
 }
