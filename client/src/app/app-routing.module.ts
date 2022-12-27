@@ -33,9 +33,19 @@ const routes: Routes = [
   {
     path: 'forgetpassword',
     loadChildren: () => import('./forgetpassword/forgetpassword.module').then( m => m.ForgetpasswordPageModule)
+<<<<<<< Updated upstream
   },  {
     path: 'ledger',
     loadChildren: () => import('./ledger/ledger.module').then( m => m.LedgerPageModule)
+=======
+  },
+  {
+    path: 'tally',
+    loadChildren: () => import('./tally/tally.module').then( m => m.TallyPageModule)
+  },  {
+    path: 'calender',
+    loadChildren: () => import('./calender/calender.module').then( m => m.CalenderPageModule)
+>>>>>>> Stashed changes
   }
 
 ];
