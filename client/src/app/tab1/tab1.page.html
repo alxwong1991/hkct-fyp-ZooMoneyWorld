@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title >
       Animal
@@ -6,17 +6,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+  <div class="home">
+  <br>
   <ion-datetime-button datetime="datetime"></ion-datetime-button>
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime"></ion-datetime>
+    </ng-template>
+  </ion-modal>
 
-<ion-modal [keepContentsMounted]="true">
-  <ng-template>
-    <ion-datetime id="datetime"></ion-datetime>
-  </ng-template>
-</ion-modal>
-
-  <div class="">
-    
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button class="btn" color="medium">
+    <ion-icon name="person"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="bottom" class="btn-list">
+      <ion-fab-button><ion-icon name="log-in-outline" [routerLink]="['/login']"></ion-icon>&nbsp;
+      </ion-fab-button>
+      <ion-fab-button><ion-icon name="people-outline" [routerLink]="['/friends']"></ion-icon>&nbsp;
+      </ion-fab-button>
+      <ion-fab-button><ion-icon name="journal-outline" [routerLink]="['/tally']"></ion-icon>&nbsp;
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
+   
   </div>
 
 </ion-content>

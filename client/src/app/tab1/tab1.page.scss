@@ -1,5 +1,6 @@
 ion-content{
-	--background: #f7b75d;
+	--background: url('../../assets/home/home_bg.jpg') no-repeat center/cover fixed;
+	
 }
 	.user{
 
@@ -29,5 +30,17 @@ ion-content{
 			font-weight: 500;
 			font-size: 20px; 
 			text-align: center;
+		}
+	}
+
+	ion-fab{
+		z-index: 999;
+		padding-top: 10px;
+		.btn{
+			width: 40px;
+			height: 40px;
+		}
+		.btn-list{
+			padding-right: 10px;
 		}
 	}
