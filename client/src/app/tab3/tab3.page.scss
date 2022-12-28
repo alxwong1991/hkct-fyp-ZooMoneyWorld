@@ -1,115 +1,112 @@
-.tab{
-    background-image: url('/assets/bg.jpg');
-    background-size: 100% 60%;
-    width: 100%;
-    position: fixed;
-    align-items: center;
+.tab {
+  background-image: url("/assets/bg.jpg");
+  background-size: 100% 60%;
+  width: 100%;
+  position: fixed;
+  align-items: center;
 }
 
-.tally{
-float: right;
-ion-button{
+.tally {
+  float: right;
+  ion-button {
     color: #868380;
     font-size: 20px;
-}
-}
- 
-.mainbtn{
-    text-align: center;
-    ion-button{
-        color:#000000;
-        font-size: 20px;
-    }
-   
+  }
 }
 
-.btntype{
-   
-    
-    ion-tab-button{
-        --border-radius: 50%;
-        color: rgb(145, 148, 150);
+.mainbtn {
+  text-align: center;
+  ion-button {
+    color: #000000;
+    font-size: 20px;
+  }
 }
-ion-label{
+
+.btntype {
+  ion-tab-button {
+    --border-radius: 50%;
+    color: rgb(145, 148, 150);
+  }
+  ion-label {
     color: black;
     font-size: 10px;
-}
+  }
 }
 
-.form{
-    width: 100%;
-    background-color: #fff;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  }
-.form .title{
-    font-size: 25px;
-    font-weight: 500;
-    position: relative;
-  }
-  .form .title::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 30px;
-    border-radius: 5px;
-    background: linear-gradient(135deg, #e6c771, #b67b59);
-  }
-  .content form .form-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-    padding-left: 5px;
-  }
-  form .form-details .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 10px);
-  }
-  form .input-box ion-label{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  form .input-box .cost{
-    width: 100%;
-  }
-  form .column {
-    display: flex;
-    column-gap: 15px;
-  }
-  form .column .select-box ion-label{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  form .column .select-box .select{
-    width: 150%;
-  }
-  form .input-box .textarea{
-    width: 100%;
-  }
-  form .button{
-    height: 45px;
-    margin: 35px 0
-  }
-  form .button input{
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: linear-gradient(-135deg, #e6c771, #b67b59);
-  }
-  form .button input:hover{
-   /* transform: scale(0.99); */
-   background: linear-gradient(-135deg, #e6c771, #b67b59);
-   }
+.form {
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.form .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #e6c771, #b67b59);
+}
+.content form .form-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+  padding-left: 5px;
+}
+form .form-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 10px);
+}
+form .input-box ion-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+form .input-box .cost {
+  width: 100%;
+}
+form .column {
+  display: flex;
+  column-gap: 15px;
+}
+form .column .select-box ion-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+form .column .select-box .select {
+  width: 150%;
+}
+form .input-box .textarea {
+  width: 100%;
+}
+form .button {
+  height: 45px;
+  margin: 35px 0;
+}
+form .button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(-135deg, #e6c771, #b67b59);
+}
+form .button input:hover {
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #e6c771, #b67b59);
+}

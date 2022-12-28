@@ -1,11 +1,11 @@
-import { IonicModule } from '@ionic/angular';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { TallyPage } from './tally.page';
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import { IonicModule } from "@ionic/angular";
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
+import { TallyPage } from "./tally.page";
+import { ExploreContainerComponentModule } from "../explore-container/explore-container.module";
 
-import { TallyPageRoutingModule } from './tally-routing.module';
+import { TallyPageRoutingModule } from "./tally-routing.module";
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import { TallyPageRoutingModule } from './tally-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    TallyPageRoutingModule
+    TallyPageRoutingModule,
   ],
-  declarations: [TallyPage]
+  declarations: [TallyPage],
 })
 export class TallyPageModule {}
