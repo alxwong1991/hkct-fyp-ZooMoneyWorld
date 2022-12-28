@@ -5,60 +5,63 @@
 </ion-header>
 
 <ion-content>
-  <ion-button [routerLink]="['/login']" slot="end">
-    login
-  </ion-button>
+  <div class="user">
+    <ion-button [routerLink]="['/login']"> login </ion-button>
+  </div>
 
-  <div class="selection ion-padding">
-    <div class="heading">
-    <h1>
-      常用功能
-    </h1>
-    </div>
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-tab-button tab="person" [routerLink]="['/option']">
-            <ion-icon name="settings"></ion-icon>
-            <ion-label>設定</ion-label>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col>
-          <ion-tab-button tab="person" [routerLink]="['/friends']">
-            <ion-icon name="people"></ion-icon>
-            <ion-label>好友</ion-label>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col>
-          <ion-tab-button tab="person">
-            <ion-icon name="journal" [routerLink]="['/tally']"></ion-icon>
-            <ion-label>賬本</ion-label>
-          </ion-tab-button>
-        </ion-col>
-        <ion-col>
-          <ion-tab-button tab="person">
-            <ion-icon name="extension-puzzle"></ion-icon>
-            <ion-label>圖鑒</ion-label>
-          </ion-tab-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    <ion-list style="text-align:center; font-size:large;">
-      <ion-item></ion-item>
+  <div class="selection">
+    <ion-card>
       <div class="heading">
-        <h1>
-          關於我們
-        </h1>
+        <h1>常用功能</h1>
+      </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-tab-button tab="person" [routerLink]="['/option']">
+              <ion-icon name="settings"></ion-icon>
+              <ion-label>設定</ion-label>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col>
+            <ion-tab-button tab="person" [routerLink]="['/friends']">
+              <ion-icon name="people"></ion-icon>
+              <ion-label>好友</ion-label>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col>
+            <ion-tab-button tab="tally" [routerLink]="['/tally']">
+              <ion-icon name="journal"></ion-icon>
+              <ion-label>賬本</ion-label>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col>
+            <ion-tab-button tab="person">
+              <ion-icon name="extension-puzzle"></ion-icon>
+              <ion-label>圖鑒</ion-label>
+            </ion-tab-button>
+          </ion-col>
+          <ion-col>
+            <ion-tab-button tab="person" [routerLink]="['/calender']">
+              <ion-icon name="calendar-clear"></ion-icon>
+              <ion-label>日歷</ion-label>
+            </ion-tab-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-list style="text-align: center; font-size: large">
+        <ion-item></ion-item>
+        <div class="heading">
+          <h1>關於我們</h1>
         </div>
-        <br>
+        <br />
         <ion-icon name="call-outline"></ion-icon>
         <ion-label> 1234 5678</ion-label>
-        <br>
+        <br />
         <ion-icon name="mail-outline"></ion-icon>
         <ion-label> ZooMoneyWorld@example.com</ion-label>
-      <ion-item></ion-item>
-    </ion-list>
-
-    <br>
+        <ion-item></ion-item>
+      </ion-list>
+      <br />
+    </ion-card>
   </div>
 </ion-content>

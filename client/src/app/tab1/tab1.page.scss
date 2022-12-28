@@ -1,3 +1,46 @@
-ion-toolbar{
-    ---background: #ffffff;
+ion-content{
+	--background: url('../../assets/home/home_bg.jpg') no-repeat center/cover fixed;
+	
 }
+	.user{
+
+		ion-button{
+			padding-top: 15px;
+			padding-right: 15px;
+			float:right;
+			font-size: 20px;
+		}
+	}
+
+	.selection{
+		
+		margin-top: 30%;
+		ion-card{
+			height: 100%;
+			border-radius: 40px 40px 0 0;
+			background-color: #ffffff;
+		}
+		
+	}
+
+	.heading{
+		margin-top: 30px;
+		
+		h1{
+			font-weight: 500;
+			font-size: 20px; 
+			text-align: center;
+		}
+	}
+
+	ion-fab{
+		z-index: 999;
+		padding-top: 10px;
+		.btn{
+			width: 40px;
+			height: 40px;
+		}
+		.btn-list{
+			padding-right: 10px;
+		}
+	}

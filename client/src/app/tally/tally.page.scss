@@ -1,37 +1,42 @@
-    .color{
-        background-color: #f5e9b3c9;
-    }
-    .back{
-        padding-top: 10px;
-        padding-bottom: 10px;
-    ion-button{
-        color: #e48220;
-        font-size: 30px;
-        
-    }
-    }
+.color {
+  background-color: #f5e9b3c9;
+}
+.back {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  ion-button {
+    color: #e48220;
+    font-size: 30px;
+  }
+}
 
-    .tally{
-        padding-left: 15px;
-        padding-right: 15px;
-        ion-label{
-            font-weight: 700;
-            font-size: 20px;
-        }
-        ion-card{
-            border-radius: 12px;
-            border-color: #000000;
-        }
-        ion-card-subtitle{
-            color: rgb(245, 195, 195);
-        }
-        ion-button{
-            font-size: 9px;
-            float: right;
-            img{
-                height: 25px;
-                width: 25px;
-            }
-        }
-        
+.tally {
+  padding-left: 15px;
+  padding-right: 15px;
+  ion-label {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  ion-card {
+    border-radius: 12px;
+    border-color: #000000;
+  }
+  ion-card-subtitle {
+    color: rgb(245, 195, 195);
+  }
+  ion-button {
+    font-size: 9px;
+    float: right;
+    img {
+      height: 25px;
+      width: 25px;
     }
+  }
+}
+
+.add {
+  width: 99%;
+  position: fixed;
+  bottom: 0px;
+  z-index: 9999;
+}

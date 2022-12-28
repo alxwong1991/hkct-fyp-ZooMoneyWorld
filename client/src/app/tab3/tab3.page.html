@@ -1,148 +1,362 @@
 <ion-content>
- 
   <div class="tab">
     <div class="tally">
-    <ion-button fill="clear" [routerLink]="['/tally']">
-    <ion-label>賬本</ion-label>
-    <ion-icon name="journal"></ion-icon>
-    </ion-button>
+      <ion-button fill="clear" [routerLink]="['/tally']">
+        <ion-label>賬本</ion-label>
+        <ion-icon name="journal"></ion-icon>
+      </ion-button>
     </div>
-    <br>
+    <br />
     <div class="mainbtn">
       <ion-grid>
         <ion-row>
           <ion-col size="4"></ion-col>
           <ion-col size="4">
-            <ion-button (click)="onClick()" expand="block" fill="clear">
-              支出
-            </ion-button>
+            <ion-button expand="block" fill="clear"> 支出 </ion-button>
           </ion-col>
           <ion-col size="4">
-            <ion-button (click)="onClick()" expand="block" fill="clear">
-              收入
-            </ion-button>
+            <ion-button expand="block" fill="clear"> 收入 </ion-button>
           </ion-col>
           <ion-col size="4"></ion-col>
         </ion-row>
       </ion-grid>
     </div>
- 
-    <div class="btntype">
-    <ion-slides mode="ios" pager="ios" scrollbar="ios">
-      <ion-slide>
-        <ion-grid>
-          <ion-row>
-            <ion-col size="3">
-            <ion-tab-button (click)="onClick()" fill="outline">
-              <ion-icon name="fast-food-outline"></ion-icon>
-              <ion-label>餐飲</ion-label>
-            </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()" fill="outline">
-                <ion-icon name="shirt-outline"></ion-icon>
-                <ion-label>購物</ion-label>
-              </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()" fill="outline">
-                日用
-              </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()"  fill="outline">
-                交通
-              </ion-tab-button>
-            </ion-col>
-          </ion-row>
-          <br>
-          <ion-row>
-            <ion-col size="3">
-            <ion-tab-button (click)="onClick()" fill="outline">
-              <ion-icon name="fast-food-outline"></ion-icon>
-              <ion-label>餐飲</ion-label>
-            </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()" fill="outline">
-                <ion-icon name="shirt-outline"></ion-icon>
-                <ion-label>購物</ion-label>
-              </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()" fill="outline">
-                日用
-              </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()"  fill="outline">
-                交通
-              </ion-tab-button>
-            </ion-col>
-          </ion-row>
-          <br>
-          <ion-row>
-            <ion-col size="3">
-            <ion-tab-button (click)="onClick()" fill="outline">
-              <ion-icon name="fast-food-outline"></ion-icon>
-              <ion-label>餐飲</ion-label>
-            </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()" fill="outline">
-                <ion-icon name="shirt-outline"></ion-icon>
-                <ion-label>購物</ion-label>
-              </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()" fill="outline">
-                日用
-              </ion-tab-button>
-            </ion-col>
-            <ion-col size="3">
-              <ion-tab-button (click)="onClick()"  fill="outline">
-                交通
-              </ion-tab-button>
-            </ion-col>
-          </ion-row>
-          <br><br>
-        </ion-grid>
-      </ion-slide>
-    </ion-slides>
-    </div>
-   
-    
-    <div class="calc">
-      <ion-input [(ngModel)]="cost" type="text"></ion-input>
-      <div class="num-btn">
-        <ion-button (click)="calClick('7')">7</ion-button>
-        <ion-button (click)="calClick('8')">8</ion-button>
-        <ion-button (click)="calClick('9')">9</ion-button>
-        <ion-button (click)="onClick()" fill="outline">
-          <ion-icon name="calendar-clear-outline"></ion-icon>
-        </ion-button>
-        <ion-button (click)="calClick('4')">4</ion-button>
-        <ion-button (click)="calClick('5')">5</ion-button>
-        <ion-button (click)="calClick('6')">6</ion-button>
-        <ion-button (click)="calClick('+')" fill="outline">
-          <ion-icon name="add-outline"></ion-icon>
-        </ion-button>
-        <ion-button (click)="calClick('1')">1</ion-button>
-        <ion-button (click)="calClick('2')">2</ion-button>
-        <ion-button (click)="calClick('3')">3</ion-button>
-        <ion-button (click)="calClick('-')" fill="outline">
-          <ion-icon name="remove-outline"></ion-icon>
-        </ion-button>
-        <ion-button (click)="calClick('.')"style="font-size: 22px;">.</ion-button>
-        <ion-button (click)="calClick('0')">0</ion-button>
-        <ion-button (click)="delClick()" style="font-size: 15px;">
-          <ion-icon name="backspace-outline" ></ion-icon>
-        </ion-button>
-        <ion-button  style="font-size: 18px; --background:#f7b75d;">完成</ion-button>
-      </div>
-      </div>
-    </div>
-    
-</ion-content>
- 
 
+    <div class="btntype">
+      <ion-slides mode="ios" pager="ios" scrollbar="ios">
+        <ion-slide>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="fast-food-outline"></ion-icon>
+                  <ion-label>餐飲</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="bag-outline"></ion-icon>
+                  <ion-label>購物</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="basket-outline"></ion-icon>
+                  <ion-label>日用</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="bus-outline"></ion-icon>
+                  <ion-label>交通</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br />
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="fast-food-outline"></ion-icon>
+                  <ion-label>蔬菜</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="nutrition-outline"></ion-icon>
+                  <ion-label>水果</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="pizza-outline"></ion-icon>
+                  <ion-label>零食</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="bicycle-outline"></ion-icon>
+                  <ion-label>運動</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br />
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="game-controller-outline"></ion-icon>
+                  <ion-label>娛樂</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="call-outline"></ion-icon>
+                  <ion-label>通訊</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="shirt-outline"></ion-icon>
+                  <ion-label>服飾</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="sparkles-outline"></ion-icon>
+                  <ion-label>美容</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br /><br />
+          </ion-grid>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="home-outline"></ion-icon>
+                  <ion-label>住房</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                  <ion-label>家庭</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="people-outline"></ion-icon>
+                  <ion-label>社交</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="airplane-outline"></ion-icon>
+                  <ion-label>旅行</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br />
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="beer-outline"></ion-icon>
+                  <ion-label>煙酒</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="camera-outline"></ion-icon>
+                  <ion-label>數碼</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="car-outline"></ion-icon>
+                  <ion-label>汽車</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="medkit-outline"></ion-icon>
+                  <ion-label>醫療</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br />
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="book-outline"></ion-icon>
+                  <ion-label>書籍</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="school-outline"></ion-icon>
+                  <ion-label>學習</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="paw-outline"></ion-icon>
+                  <ion-label>寵物</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-label>禮金</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br /><br />
+          </ion-grid>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="gift-outline"></ion-icon>
+                  <ion-label>禮品</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                  <ion-label>辦公</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="build-outline"></ion-icon>
+                  <ion-label>維修</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <ion-label>捐贈</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br />
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                  <ion-label>彩票</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="diamond-outline"></ion-icon>
+                  <ion-label>紅包</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="layers-outline"></ion-icon>
+                  <ion-label>快遞</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="happy-outline"></ion-icon>
+                  <ion-label>追星</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br />
+            <ion-row>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="wallet-outline"></ion-icon>
+                  <ion-label>繳費</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="share-outline"></ion-icon>
+                  <ion-label>還款</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="log-out-outline"></ion-icon>
+                  <ion-label>借出</ion-label>
+                </ion-tab-button>
+              </ion-col>
+              <ion-col size="3">
+                <ion-tab-button fill="outline">
+                  <ion-icon name="cash-outline"></ion-icon>
+                  <ion-label>其他</ion-label>
+                </ion-tab-button>
+              </ion-col>
+            </ion-row>
+            <br /><br />
+          </ion-grid>
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+    <div class="form">
+      <div class="title">輸入</div>
+      <br />
+      <div class="content">
+        <form action="#">
+          <div class="form-details">
+            <div class="input-box">
+              <ion-label>日期</ion-label>
+              <input type="date" placeholder="" required />
+            </div>
+            <div class="input-box">
+              <ion-label>金額</ion-label>
+              <input type="text" class="cost" placeholder="HK$" required />
+            </div>
+            <div class="column">
+              <div class="select-box">
+                <ion-label>分類</ion-label>
+                <ion-select placeholder="請選擇" name="type" class="select">
+                  <optgroup label="第一類">
+                    <ion-select-option>餐飲</ion-select-option>
+                    <ion-select-option>購物</ion-select-option>
+                    <ion-select-option>日用</ion-select-option>
+                    <ion-select-option>交通</ion-select-option>
+                    <ion-select-option>蔬菜</ion-select-option>
+                    <ion-select-option>水果</ion-select-option>
+                    <ion-select-option>零食</ion-select-option>
+                    <ion-select-option>運動</ion-select-option>
+                    <ion-select-option>娛樂</ion-select-option>
+                    <ion-select-option>通訊</ion-select-option>
+                    <ion-select-option>服飾</ion-select-option>
+                    <ion-select-option>美容</ion-select-option>
+                  </optgroup>
+                  <optgroup label="第二類">
+                    <ion-select-option>住房</ion-select-option>
+                    <ion-select-option>家庭</ion-select-option>
+                    <ion-select-option>社交</ion-select-option>
+                    <ion-select-option>旅行</ion-select-option>
+                    <ion-select-option>煙酒</ion-select-option>
+                    <ion-select-option>數碼</ion-select-option>
+                    <ion-select-option>汽車</ion-select-option>
+                    <ion-select-option>醫療</ion-select-option>
+                    <ion-select-option>書籍</ion-select-option>
+                    <ion-select-option>學習</ion-select-option>
+                    <ion-select-option>寵物</ion-select-option>
+                    <ion-select-option>禮金</ion-select-option>
+                  </optgroup>
+                  <optgroup label="第三類">
+                    <ion-select-option>禮品</ion-select-option>
+                    <ion-select-option>辦公</ion-select-option>
+                    <ion-select-option>維修</ion-select-option>
+                    <ion-select-option>捐贈</ion-select-option>
+                    <ion-select-option>彩票</ion-select-option>
+                    <ion-select-option>紅包</ion-select-option>
+                    <ion-select-option>快遞</ion-select-option>
+                    <ion-select-option>追星</ion-select-option>
+                    <ion-select-option>繳費</ion-select-option>
+                    <ion-select-option>退款</ion-select-option>
+                    <ion-select-option>借出</ion-select-option>
+                    <ion-select-option>其他</ion-select-option>
+                  </optgroup>
+                </ion-select>
+              </div>
+            </div>
+            <div class="input-box">
+              <ion-label>備註</ion-label>
+              <textarea class="textarea" required></textarea>
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="完成" (click)="send()" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>

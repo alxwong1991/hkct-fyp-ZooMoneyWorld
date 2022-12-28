@@ -33,7 +33,15 @@ const routes: Routes = [
   {
     path: 'forgetpassword',
     loadChildren: () => import('./forgetpassword/forgetpassword.module').then( m => m.ForgetpasswordPageModule)
+  },
+  {
+    path: 'tally',
+    loadChildren: () => import('./tally/tally.module').then( m => m.TallyPageModule)
+  },  {
+    path: 'calender',
+    loadChildren: () => import('./calender/calender.module').then( m => m.CalenderPageModule)
   }
+
 ];
 @NgModule({
   imports: [
