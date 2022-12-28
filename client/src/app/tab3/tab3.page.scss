@@ -1,8 +1,7 @@
 .tab{
     background-image: url('/assets/bg.jpg');
-    background-size: 100% 75%;
+    background-size: 100% 60%;
     width: 100%;
-    max-width: 100%;    
     position: fixed;
     align-items: center;
 }
@@ -16,9 +15,7 @@ ion-button{
 }
  
 .mainbtn{
-   
     text-align: center;
-    
     ion-button{
         color:#000000;
         font-size: 20px;
